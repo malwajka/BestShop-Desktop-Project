@@ -44,25 +44,27 @@
 
 .header-navigation {
     display: flex;
+    margin-top: 2px;
     font-family: var(--font-open-sans);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 11px;
+    letter-spacing: 3.28px;
 }
 
 .header-navigation-element {
-    padding: 0 30px;
+    padding: 0 43px;
 }
 
 .header-navigation-element:last-child {
-    padding-right: 0;
+    padding-right: 18px;
 }
 
 .nav-element {
     text-decoration: none;
     color: var(--color-grey);
     border-bottom: 3px solid transparent;
-    padding: 28px 18px 22px;  /*-------DLACZEGO???-------*/
+    padding: 28px 0 24px;  /*-------DLACZEGO???-------*/
 }
 
 .nav-element:hover {
@@ -71,6 +73,7 @@
 }
 
 /*------MAIN-------*/
+/*------OPENING-------*/
 
 .opening {
     display: flex;
@@ -119,4 +122,82 @@
     height: auto;
     width: 100%;
 
+}
+
+/*------STATISTICS------*/
+
+
+
+.statistics-title {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.statistics-container {
+    margin: 100px auto 120px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 823px;
+}
+
+.statistics-container-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-raleway);
+    max-width: 163px;
+    text-align: center;
+}
+
+.statistics-circle {
+    border-radius: 50%;
+    width: 62.71px;
+    height: 62.71px;
+    position: relative;
+}
+
+.statistics-img {
+    position: absolute;
+}
+
+.statistics-container-single:nth-child(1) .statistics-circle {
+    background-color: var(--color-reddish);
+}
+
+.statistics-container-single:nth-child(1) .statistics-img {
+    left:48%;
+    top:0;
+}
+
+.statistics-container-single:nth-child(2) .statistics-circle {
+    background-color: var(--color-primary);
+}
+
+.statistics-container-single:nth-child(2) .statistics-img {
+    left: 33%;
+    top: 14px;
+}
+
+.statistics-container-single:nth-child(3) .statistics-circle {
+    background-color: var(--color-green);
+}
+
+.statistics-container-single:nth-child(3) .statistics-img {
+    left: 50%;
+    top: 6px;
+}
+
+.statistics-number {
+    margin-top: 13px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5.96px;
+}
+
+.statistics-text {
+    margin-top: 19px;
 }
