@@ -368,6 +368,7 @@
 .trumpet img {
     width: 295px;
     height: 207px;
+    margin-top: 40px; /*-----Dlaczego nie mogę inaczej tego obrazka przesunąć centralnie na środek?-----*/
 }
 
 .benefits-text-third {
@@ -391,7 +392,203 @@
 /*------PRICING-------*/
 
 
+.pricing {
+    margin: 100px auto;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pricing-box-basic {
+    margin-right: 59px;
+}
+
+.pricing-box-premium {
+    margin-left: 58px;
+}
+
+.pricing h2 {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    text-align: center;
+}
+
+.pricing-type {
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing-price {
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: lighter;
+}
+
+.basic .pricing-details .pricing-price {
+    color: var(--color-reddish);
+}
+
+.professional .pricing-details .pricing-price {
+    color: #07ACE6;
+}
+
+.premium .pricing-details .pricing-price {
+    color: var(--color-green);
+}
+
+.prices-limited-offer {
+    font-family: var(--font-raleway);
+    font-weight: bold;
+    font-size: 12px;
+    color: #13253B;
+}
+
+.pricing-items {
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+    /*text-align: center;*/
+}
+
+.pricing-box {
+    border: 1px solid;
+    border-radius: 18px;
+}
+
+.pricing-box-basic, .pricing-box-premium {
+    width: 372px;
+    height: auto;
+}
+
+.pricing-box-basic {
+    border-color: var(--color-reddish);
+}
+
+.basic .pricing-items {
+    margin-top: 69px;
+}
+
+.premium .pricing-items {
+    margin-top: 50px;
+}
+
+.basic .pricing-details, .premium .pricing-details {
+    margin-top: 34px;
+}
+
+.basic .pricing-items .pricing-item, .premium .pricing-items .pricing-item {
+    margin-bottom: 20px;
+}
+
+.pricing-box-premium {
+    border-color: var(--color-green);
+}
+
+.professional {
+    margin-bottom: 53px;
+}
+
+.pricing-box-professional {
+    width: 405px;
+    border-color: #07ACE6;
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing-details .pricing-type {
+    margin-top: 34px;
+    margin-bottom: 14px;
+
+}
+
+.professional .pricing-details .prices-limited-offer {
+    margin-top: 15px;
+    margin-bottom: 61px;
+}
+
+.professional .pricing-items .pricing-item {
+    margin: 25px auto;
+}
+
+.premium .pricing-details .prices-limited-offer {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.basic .pricing-details {
+    margin-bottom: 69px;
+}
+
+.basic .pricing-items, .premium .pricing-items {
+    margin-bottom: 55px;
+}
+
+.prices-btn {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    bottom: -8px;
+    border-radius: 23px;
+    padding: 16px 57px;
+    font-size: 13px;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.btn-reddish {
+    background-color: var(--color-reddish);
+}
+
+.btn-green {
+    background-color: var(--color-green);
+}
+
+.prices-btn-professional {
+    width: 165px;
+    height: 50px;
+    position: relative;
+    bottom: -8px;
+    border-radius: 23px;
+    background-color: #07ACE6;
+    padding: 16px 64px;
+    font-size: 13px;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url("../assets/Ckechmark-1.svg");
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pricing-item-not-included::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url("../assets/Close.svg"); /*Dlaczego nie zawsze działa?*/
+}
+
+
+/*------FORM------*/
+
+
+
+
+
 /*------FOOTER--------*/
+
 
 .footer {
     box-shadow: 0 -5px 40px #00000029;
@@ -403,7 +600,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-
 }
 
 .footer-copyright {
