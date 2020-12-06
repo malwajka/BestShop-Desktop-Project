@@ -584,7 +584,147 @@
 /*------FORM------*/
 
 
+.contact-form {
+    margin-top: 155px;
+    margin-bottom: 55px;
+}
 
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    /*margin-right: 365px;*/
+    /*margin-left: 365px;*/
+}
+
+.contact-column {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    margin-right: 200px;
+}
+
+.contact-title {
+    font-family: var(--font-raleway);
+    font-size: 49px;
+    margin-top: 0;
+}
+
+.contact-text {
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+.contact-info .info-mail, .contact-info .info-phone {
+    text-decoration: none;
+    color: var(--color-grey);
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.info-mail {
+    margin-right: 20px;
+}
+
+.mail-icon, .phone-icon {
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    max-width: 500px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    /*margin-bottom: 20px;*/
+}
+
+.form-input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    line-height: 40px;                  /*Na wyczucie, skąd to zczytać?*/
+}
+
+.form-label-email {
+    margin-top: 42px;
+}
+
+.checkbox-container {
+    margin-top: 30px;
+}
+
+.form-checkbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-checkbox:hover {
+    cursor: pointer;
+}
+
+.checkbox-text {
+    font-family: var(--font-open-sans);
+    font-size: 12px;
+    color: #707070;
+    line-height: 18px;
+    margin-left: 40px;
+}
+
+.checkbox {
+    position: absolute; /*Dlaczego????*/
+    width: 0;
+    height: 0;
+}
+
+
+.checkbox-border {
+    position: absolute;  /*Dlaczego????*/
+    width: 24px;
+    height: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+
+.checkbox:checked ~ .checkbox-border {
+    background-image: url("../assets/Checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.btn-form {
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    font-size: 13px;
+    background-color: var(--color-primary);
+    border-radius: 35px;
+    border: none;
+    margin-top: 20px;
+    width: 226px;
+    height: 57px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    box-shadow: 5px 10px 14px #07ACE629;
+}
 
 
 /*------FOOTER--------*/
